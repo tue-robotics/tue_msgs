@@ -4,14 +4,14 @@
   <version>0.0.0</version>
   <description>Contains TU/e specific messages, services and actions</description>
 
-  <maintainer email="j.j.m.lunenburg@tue.nl">todo</maintainer>
+  <maintainer email="j.j.m.lunenburg@tue.nl">Janno Lunenburg</maintainer>
 
-  <license>TODO</license>
+  <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
-  
+
   <build_depend>message_generation</build_depend>
-  
+
   <run_depend>message_runtime</run_depend>
 
 </package>
