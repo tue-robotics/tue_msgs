@@ -14,6 +14,7 @@ add_message_files(
     GripperMeasurement.msg
     People.msg
     Person.msg
+    RGBLightCommand.msg
 )
 
 generate_messages(
