@@ -1,0 +1,9 @@
+# Define the goal
+geometry_msgs/PointStamped handle_location_estimate
+---
+# Define the result
+geometry_msgs/PointStamped handle_edge_point1 # Edge points of the handle
+geometry_msgs/PointStamped handle_edge_point2
+---
+# Feedback
+string progress
