@@ -3,9 +3,10 @@ project(tue_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   message_generation
-  std_msgs
   actionlib_msgs
   geometry_msgs
+  sensor_msgs
+  std_msgs
 )
 
 add_message_files(
@@ -13,6 +14,7 @@ add_message_files(
   FILES
     GripperCommand.msg
     GripperMeasurement.msg
+    MaskedImage.msg
     People.msg
     Person.msg
     RGBLightCommand.msg
@@ -26,16 +28,17 @@ add_action_files(
 
 generate_messages(
   DEPENDENCIES
-  std_msgs
-  geometry_msgs
   actionlib_msgs
+  geometry_msgs
+  sensor_msgs
+  std_msgs
 )
 
 catkin_package(
   # INCLUDE_DIRS include
   # LIBRARIES bla
   CATKIN_DEPENDS
-    message_runtime geometry_msgs std_msgs
+    message_runtime actionlib_msgs geometry_msgs sensor_msgs std_msgs
 )
 
 include_directories(
