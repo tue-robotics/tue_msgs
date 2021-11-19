@@ -1,0 +1,5 @@
+sensor_msgs/Image input_image   # Color image to be pixel labeled
+
+---
+
+MaskedImage output_image        # Pixel labeled image

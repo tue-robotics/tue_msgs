@@ -26,6 +26,12 @@ add_action_files(
     LocateDoorHandle.action
 )
 
+add_service_files(
+  DIRECTORY srv
+  FILES
+    GetMaskedImage.srv
+)
+
 generate_messages(
   DEPENDENCIES
   actionlib_msgs
