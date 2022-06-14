@@ -30,6 +30,7 @@ add_service_files(
   DIRECTORY srv
   FILES
     GetMaskedImage.srv
+    PoseProbability.srv
 )
 
 generate_messages(
